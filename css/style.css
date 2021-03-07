@@ -1,0 +1,283 @@
+*{
+    overflow-x: hidden;
+    /* color: chocolate; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        background-color:black;
+    }
+    h2, h3{
+        text-align: center;
+        font-size: 40px;
+    }
+    h4{
+        
+        font-size: 26px;
+        grid-area:descripcion;
+        color:white;
+    }
+    h3{
+        grid-area:t-proyectos;
+        }
+        iframe{
+        grid-area:curso;
+        }
+        h5{
+            margin-left: 30px;
+            margin-top: 40px;
+            font-size: 26px;
+        color: white;
+        grid-area:parrafo; 
+        }
+        .servicios{
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+        display: grid;
+        grid:repeat(1,1fr) / repeat(3,1fr);
+        grid-template-areas:
+        "servicios servicios servicios"; 
+        }
+        .proyecto{
+        overflow: hidden;
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 20% 20% 30% 30%;
+        grid-template-areas:
+        "descripcion descripcion curso curso"
+        "descripcion descripcion curso curso"
+        "cabina cabina cabina parrafo"
+        "cabina cabina cabina logo_final";
+        }
+        img{
+        width: 100%;
+        height: 60%;
+    } 
+    div{
+    background-color: black;
+    }
+    p{
+    margin-top: 20px;
+    overflow-y: hidden;
+    padding: 20px;
+    color: chocolate;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    }
+    button{
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 70px;
+        font-size: 20px;
+        background-color: rgb(194, 73, 17);
+        cursor: pointer;
+    }
+    button>a{
+        color: white;
+        text-decoration: none;
+    }
+    button:hover{
+        background-color: rgb(185, 42, 29);
+    }
+    .p-curso{
+    font-style: normal;
+    grid-area:descripcion;
+    color:white;
+    }
+    
+    h3{
+    grid-area:t-proyectos;
+    }
+    iframe{
+    grid-area:curso;
+    }
+    h5{
+        margin-left: 30px;
+        margin-top: 40px;
+        font-size: 26px;
+    color: white;
+    grid-area:parrafo; 
+    }
+    .cabina{
+        height: 100%;
+        grid-area:cabina;
+    }
+    .p-cabina{
+        color: white;
+        font-style: normal;
+        margin-top: 60px;
+    grid-area: parrafo;
+    }
+    .menu_cafe{
+    margin: auto;
+    width: 30%;
+    height: 1400px;
+}
+.btn-menu{
+    width:100%;
+    background-color: rgb(138, 68, 2);
+}
+.log{
+    border-radius: 45px;
+    margin: auto;
+    grid-area:logo_final;
+    width: 200px;
+    height: 200px;
+}
+footer{
+        text-align: center;
+        padding: 10px;
+        font-size: 25PX;
+        font-style: italic;
+        font-weight: bold;
+        color:#fff;
+        background-color: rgb(107, 47, 5);
+        width: 100%;
+        height:50px;
+    }
+.icono{
+    margin-left: 30px;
+    
+    height: 30px;
+    width: 40px;
+}
+/* version movil principal */
+@media  (max-width:400px) and (orientation:portrait){
+    .servicios{
+    width:100%;
+    }
+    img{
+        width: 100%;
+        height: 100px;
+    }
+    h2,h3{
+        font-size: 26px;
+    }
+    p{
+        font-size: 16px;
+    }
+    button{
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+    }
+    h4,h5{
+        font-size: 18px;
+    }
+    .servicios{
+        width: 100%;
+        height: 460px;
+        grid-template-areas:
+        "servicios servicios servicios";
+        }
+    .proyecto{
+        margin-top: 10px;
+        height: 1000px;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows:30% 28% 17% 25%;
+        grid-template-areas:
+        "descripcion" 
+        "curso"
+        "parrafo"
+        "cabina"
+        "logo_final";
+    }
+    iframe{
+        width: 100%;
+    }
+    .cabina{
+        height: 100%;
+    }
+    .log{
+        width: 50px;
+        height: 50px;
+    }
+    footer{
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+    .icono{
+        width: 15px;
+        margin-left: 3px;
+    }
+}
+/* version movile menu_cafe */
+    @media  (max-width:400px) and (orientation:portrait){
+    .menu_cafe{
+    height: 700px;
+    width: 100%;} 
+    .menu_img{
+        height: 100%;
+    } 
+    }
+  /* fin version movil menu_cafe */
+
+  /* version tablet principal  */
+    @media (min-width:401px) and (max-width:960px){
+    .servicios{
+        width: 100%;
+        height: 560px;
+        overflow: hidden;
+        display: grid;
+        grid:repeat(1,1fr) / repeat(3,1fr);
+        grid-template-areas:
+        "servicios servicios servicios"
+    } 
+    img{
+    width: 100%;
+    height: 180px;
+    }
+    h2,h3{
+    font-size: 24px;
+    }
+    p{
+    font-size: 18px;
+    }
+    button{
+    width: 130px;
+    height: 50px;
+    font-size: 12px;
+}
+.proyecto{
+    margin-top: 10px;
+    height: 1000px;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows:15% 30% 15% 30% 10%;
+    grid-template-areas:
+    "descripcion" 
+    "curso"
+    "parrafo"
+    "cabina"
+    "logo_final";
+}
+iframe{
+    height: 100%;
+}
+.log{
+    height: 70px;
+    width: 70px;
+}
+}
+/* fin de la version tablet principal */
+
+/* version tablet .menu_cafe */
+@media (min-width:401px) and (max-width:960px){
+    .menu_cafe{
+        height: 900px;
+        width: 100%;
+    } 
+    .menu_img{
+        height: 100%;
+        } 
+    }
