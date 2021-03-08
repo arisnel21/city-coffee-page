@@ -16,9 +16,10 @@
         
         font-size: 26px;
         grid-area:descripcion;
-        color:white;
+        color:#fff;
     }
     h3{
+        color: #fff;
         grid-area:t-proyectos;
         }
         iframe{
