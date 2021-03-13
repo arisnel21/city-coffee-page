@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/city-coffee-page/estilos.css">
-    <link rel="stylesheet" href="/city-coffee-page/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <script src="https://kit.fontawesome.com/26fd60cc27.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>City Coffee</title>
-    
-</head>
-<body>
-     <div class="banner">
 
-        <img src="/city-coffee-page/img/LogoMakr-50wd1f.png" alt="" class="banner__logo">
+</head>
+
+<body>
+    <div class="banner">
+
+        <img src="assets/LogoMakr-50wd1f.png" alt="" class="banner__logo">
     </div>
     <div class="navbar ">
-        <div class="navbar__elemento1 "><i class="fas fa-home"></i><a class="navbar__ancla " href="index.html ">Inicio</a></div>
-        <div class="navbar__elemento2 "><i class="fas fa-users"></i><a class="navbar__ancla " href=" #servicios">Servicios</a></div>
-        <div class="navbar__elemento4"><i class="fas fa-project-diagram"></i><a class="navbar__ancla " href="#proyecto">Proyectos</a></div>
-        <div class="navbar__elemento3 "><i class="far fa-address-book"></i><a class="navbar__ancla " href="contacto.html ">Contacto</a></div>       
+        <div class="navbar__elemento1 "><i class="fas fa-home"></i><a class="navbar__ancla "
+                href="index.html ">Inicio</a></div>
+        <div class="navbar__elemento2 "><i class="fas fa-users"></i><a class="navbar__ancla "
+                href=" #servicios">Servicios</a></div>
+        <div class="navbar__elemento4"><i class="fas fa-project-diagram"></i><a class="navbar__ancla "
+                href="#proyecto">Proyectos</a></div>
+        <div class="navbar__elemento3 "><i class="far fa-address-book"></i><a class="navbar__ancla "
+                href="#contacto">Contacto</a></div>
     </div>
     <main>
-        <!-- seccion servicios -->        
-        <section  id="servicios"  class="servicios">
+        <!-- seccion servicios -->
+        <section id="servicios" class="servicios">
             <div>
                 <img src="assets/Cafe_Americano.jpg" alt="">
                 <p>Double Expreso es un cafe con mucho cuerpo y un aroma intenso proveniente de un grano que se extrae
@@ -36,7 +43,8 @@
             <div>
                 <img src="assets/capuccino.jpg" alt="">
                 <p>
-                    Capuccino Star se trata de una receta que convina la tecnica italiana del la receta original junto con
+                    Capuccino Star se trata de una receta que convina la tecnica italiana del la receta original junto
+                    con
                     la mezcla de leche de almendras y un toque de orquidea.
                 </p>
                 <button><a href="menu.html" target="_blank">Elige tu cafe</a></button>
@@ -52,7 +60,7 @@
         <!-- fin de la seccion servicios -->
         <h3>Proyectos </h3>
         <!-- inicio de la seccion proyectos -->
-        <section  id="proyecto" class="proyecto">
+        <section id="proyecto" class="proyecto">
             <h4>Curso De Barista Internacional</h4>
             <p class="p-curso">
                 Te invitamos a formarte en una de las areas mas demandadas a nivel mundial durante 24 semanas,te
@@ -75,14 +83,40 @@
                 ambiente agradable y seguro.
             </p>
             <img class="log" src="assets/log.jpg" alt="">
-        </section> 
+        </section>
         <!-- final de la seccion proyectos -->
-    </main>  
-<footer class="ft">City Cafe &copy Todos los derechos reservados
-    <img class="icono" src="assets/facebook.svg" alt="">
-    <img class="icono" src="assets/instagram.svg" alt="">
-    <img class="icono" src="assets/youtube.svg" alt="">
-    <img class="icono" src="assets/whatsapp.svg" alt="">
-</footer>
+    </main>
+               <!-- formulario -->
+    <section class="cuerpo">
+    <form action="" id="contacto">
+            <h2 class="titulo__h2">CONTACTO</h2>
+            <input type="text" name="Nombre" placeholder="Nombre">
+            <input type="e-mail" name="Correo" placeholder="Correo">
+            <input type="phone" name="Telefono" placeholder="Telefono">
+            <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Escriba aqui su mensaje"></textarea>
+            <input type="button" value="Enviar" class="boton">
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="ft">City Cafe &copy Todos los derechos reservados
+        <img class="icono" src="assets/facebook.svg" alt="">
+        <img class="icono" src="assets/instagram.svg" alt="">
+        <img class="icono" src="assets/youtube.svg" alt="">
+        <img class="icono" src="assets/whatsapp.svg" alt="">
+    </footer>
 </body>
+
 </html>
